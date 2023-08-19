@@ -1,0 +1,78 @@
+#todo {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  width: 500px;
+  border-radius: 14px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+#todo .boxCont {
+  display: flex;
+  height: 300px;
+}
+.title {
+  width: 35%;
+  background: #fefefe;
+  border-radius: 0 0 0px 14px;
+  border-right: 3px solid #eeeded;
+}
+.title h3 {
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 3px solid #eeeded;
+  padding: 10px;
+}
+
+.todolist {
+  width: 65%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.todolist #todo-form input {
+  outline: none;
+  border: none;
+  background-color: #7995cc;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.todolist #todo-form input::placeholder {
+  color: #fff;
+}
+
+.todolist ul {
+  list-style: none;
+}
+
+.todolist ul li {
+  line-height: 1.8em;
+  display: flex;
+  align-items: center;
+}
+
+.todolist ul li img.check {
+  width: 17px;
+  margin-right: 10px;
+}
+
+.todolist ul li span {
+  text-align: left;
+  width: 100%;
+}
+.todolist ul li.checked span {
+  color: #c1c5cd;
+  text-decoration: line-through;
+}
+.todolist ul li.unchecked span {
+}
+
+.todolist ul li img {
+  width: 12px;
+  cursor: pointer;
+}

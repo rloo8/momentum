@@ -1,0 +1,64 @@
+#game {
+  position: absolute;
+  right: 50px;
+  top: 250px;
+  width: 370px;
+  border-radius: 14px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+#game .boxCont {
+  padding: 15px;
+  font-size: 15px;
+}
+
+#game .boxCont h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+#game #random-form input {
+  outline: none;
+  border-width: 0 0 2px;
+  border-color: #c2c6cf;
+  width: 80px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#game #random-form input::placeholder {
+  color: #c2c6cf;
+  text-align: center;
+}
+
+#game #random-form .playing {
+  margin-bottom: 25px;
+}
+
+#game #random-form .playing button {
+  display: block;
+  background-color: #7995cc;
+  color: #fff;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#game #random-form #result {
+  border-top: 3px solid #eeeded;
+}
+
+#game #random-form #result span:first-of-type {
+  margin-top: 10px;
+}
+#game #random-form #result span:last-of-type {
+  font-weight: 900;
+}
+
+#game #random-form #result span b {
+  color: #e74f56;
+}

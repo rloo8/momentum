@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/logout.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/game.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="left">
+            <button><img src="image/header_icon.png" alt="greeting"></button>
+            <h1 id="greeting">Desktop</h1>
+        </div>
+        <div id="right">
+            <!-- clock -->
+            <h2 id="clock"></h2>
+            <!-- //clock -->
+        </div>
+    </header>
+
+    <!-- logout -->
+    <div id="logout" class="hidden">
+        <!-- quotes -->
+        <div id="quote">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+        <!-- //quotes -->
+
+        <!-- background -->
+        <div id="colorBtn">Change Background Color</div>
+        <!-- //background -->
+
+        <div id="logoutBtn">Log Out</div>
+
+    </div>
+    <div id="clickbox">Click!</div>
+    <!-- //logout -->
+
+    <!-- login -->
+    <div id="login" class="hidden">
+        <div class="boxTop">
+            <button class="red"></button>
+            <button class="yellow"></button>
+            <button class="green"></button>
+        </div>
+        <div class="boxCont">
+            <img src="image/userImg.png" alt="user">
+            <h2>Hello!<br>Please enter your name.</h2>
+            <form id="login-form">
+                <input required maxlength="15" type="text" placeholder="enter your name" />
+                <input type="submit" value="login"></input>
+            </form>
+        </div>
+    </div>
+    <div id="loginBg" class="hidden"></div>
+    <!-- //login -->
+
+
+    <!-- todolist -->
+    <div id="todo">
+        <div class="boxTop">
+            <button class="red"></button>
+            <button class="yellow"></button>
+            <button class="green"></button>
+        </div>
+        <div class="boxCont">
+            <div class="title">
+                <h3>to do list</h3>
+            </div>
+            <div class="todolist">
+                <form id="todo-form">
+                    <input type="text" placeholder="+ Write a To Do and Press Enter">
+                </form>
+                <ul id="todo-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- //todolist -->
+
+    <!-- weather -->
+    <div id="weather">
+        <div class="boxTop">
+            <button class="grey"></button>
+            <button class="grey"></button>
+        </div>
+        <div class="boxCont">
+            <h3>Today’s Weather</h3>
+            <span class="city"></span>
+            <br>
+            <img alt="weather">
+            <span class="temp"></span>
+        </div>
+    </div>
+    <!-- //weather -->
+
+    <!-- random number game -->
+    <div id="game">
+        <div class="boxTop">
+            <button class="grey"></button>
+            <button class="grey"></button>
+        </div>
+        <div class="boxCont">
+            <form id="random-form">
+                <h3>Random Number Game</h3>
+
+                <div class="range">
+                    <label>Generate a number between 0 and </label>
+                    <input type="number" min="0" placeholder="number" />
+                </div>
+
+                <div class="playing">
+                    <label>Guess the number: </label>
+                    <input type="number" min="0" placeholder="number" />
+                    <button>Play!</button>
+                </div>
+
+                <div id="result">
+                    <span></span>
+                    <br>
+                    <span></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- //random number game -->
+
+
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/randomGame.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
